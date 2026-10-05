@@ -1,5 +1,5 @@
 ---
-id: color
+captcha_id: color
 name: Color CAPTCHA
 version: 1
 html: /captchas/color/index.html
