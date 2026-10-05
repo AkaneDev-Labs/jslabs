@@ -1,5 +1,5 @@
 ---
-id: checkbox
+captcha_id: checkbox
 name: Checkbox CAPTCHA
 version: 1
 html: /captchas/checkbox/index.html
