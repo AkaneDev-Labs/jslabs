@@ -2,9 +2,9 @@
 captcha_id: math
 name: Math CAPTCHA
 version: 1
-html: /captchas/math/
-css: /captchas/math/style.css
-js: /captchas/math/script.js
+html: /captchas/math.html
+css: /captchas/math.css
+js: /captchas/math.js
 ---
 
 A simple arithmetic CAPTCHA for testing.
