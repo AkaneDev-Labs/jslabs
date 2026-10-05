@@ -8,8 +8,8 @@ permalink: /captcha/client.js
 
     const registry = {
 {% for captcha in site.collections.captchas.docs %}
-        {{ captcha.captcha_id | jsonify }}: {
-            id: {{ captcha.captcha_id | jsonify }},
+        {{ captcha.data.captcha_id | jsonify }}: {
+            id: {{ captcha.data.captcha_id | jsonify }},
             name: {{ captcha.name | jsonify }},
             version: {{ captcha.version | default: 1 | jsonify }},
             html: {{ captcha.html | jsonify }},
