@@ -1,5 +1,5 @@
 ---
-id: math
+captcha_id: math
 name: Math CAPTCHA
 version: 1
 html: /captchas/math/index.html
