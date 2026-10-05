@@ -8,8 +8,9 @@ permalink: /captcha/client.js
 
     const registry = {
 {% for captcha in site.captchas %}
-        {{ captcha.data.captcha_id | jsonify }}: {
-            id: {{ captcha.data.captcha_id | jsonify }},
+        {% assign captcha_id = captcha.path | split: "/" | last | replace: ".md", "" %}
+        {{ captcha_id | jsonify }}: {
+            id: {{ captcha_id | jsonify }},
             name: {{ captcha.name | jsonify }},
             version: {{ captcha.version | default: 1 | jsonify }},
             html: {{ captcha.html | jsonify }},
@@ -17,7 +18,7 @@ permalink: /captcha/client.js
             js: {{ captcha.js | jsonify }}
         }{% unless forloop.last %},{% endunless %}
 {% endfor %}
-    };
+    };;
 
     const AkaneCaptcha = {
         version: "1.0.0",
