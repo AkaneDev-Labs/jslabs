@@ -1,0 +1,146 @@
+---
+layout: null
+title: AkaneDev JS Labs
+description: AkaneDev JS Labs — client-side JavaScript services, CAPTCHAs, and experimental web tools.
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="{{ page.description }}">
+
+    <title>{{ page.title }}</title>
+
+    <style>
+        @font-face {
+            font-family: 'Duplexide';
+            src: url('https://akanedevlabs.github.io/fonts/Duplexide.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .font-duplexide {
+            font-family: 'Duplexide', sans-serif;
+        }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
+
+  <header class="fixed top-0 left-0 right-0 bg-slate-900/80 backdrop-blur z-50 shadow">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-2xl md:text-3xl font-bold tracking-tight font-duplexide">
+        AkaneDev JS Labs
+      </h1>
+
+      <nav class="hidden md:flex space-x-8 text-slate-300 text-sm font-medium">
+        <a href="/" class="hover:text-indigo-400 transition">Home</a>
+        <a href="#services" class="hover:text-indigo-400 transition">Services</a>
+        <a href="#captchas" class="hover:text-indigo-400 transition">CAPTCHAs</a>
+        <a href="https://akanedevlabs.github.io" class="hover:text-indigo-400 transition">AkaneDev Labs</a>
+        <a href="https://akanedev.au" class="hover:text-indigo-400 transition">Personal Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="flex flex-col justify-center items-center text-center pt-32 pb-20 px-6">
+    <p class="text-indigo-400 text-sm font-medium mb-4">AkaneDev Labs · Experimental Web Services</p>
+
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-6">
+      JavaScript, Built for the Web
+    </h2>
+
+    <p class="text-lg md:text-xl text-slate-300 max-w-2xl">
+      JS Labs is the experimental web-services side of AkaneDev Labs,
+      hosting reusable JavaScript tools, client-side services, and
+      developer-focused experiments.
+    </p>
+  </section>
+
+  <main id="services" class="max-w-7xl mx-auto w-full px-6 pb-20">
+    <h3 class="text-2xl font-semibold mb-8 border-b border-slate-700 pb-2">
+      What JS Labs Hosts
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div class="bg-slate-800 p-6 rounded-2xl shadow hover:shadow-xl hover:scale-[1.02] transition">
+        <p class="text-indigo-400 text-sm font-medium mb-2">Security & Web</p>
+        <h4 class="text-xl font-semibold mb-2">CAPTCHA Services</h4>
+        <p class="text-slate-400 mb-4">
+          Lightweight, embeddable JavaScript CAPTCHAs designed for websites
+          that need a simple human-verification challenge.
+        </p>
+        <a href="#captchas" class="inline-block text-indigo-400 font-medium hover:underline">
+          Explore CAPTCHAs →
+        </a>
+      </div>
+
+      <div class="bg-slate-800 p-6 rounded-2xl shadow hover:shadow-xl hover:scale-[1.02] transition">
+        <p class="text-indigo-400 text-sm font-medium mb-2">Developer Tools</p>
+        <h4 class="text-xl font-semibold mb-2">JavaScript Services</h4>
+        <p class="text-slate-400 mb-4">
+          Reusable browser-side components and APIs for experiments,
+          prototypes, and projects developed through AkaneDev Labs.
+        </p>
+        <span class="text-slate-500 font-medium">More services coming soon</span>
+      </div>
+
+      <div class="bg-slate-800 p-6 rounded-2xl shadow hover:shadow-xl hover:scale-[1.02] transition">
+        <p class="text-indigo-400 text-sm font-medium mb-2">Experimental</p>
+        <h4 class="text-xl font-semibold mb-2">JS Labs Projects</h4>
+        <p class="text-slate-400 mb-4">
+          A place for smaller web experiments and services that don't
+          necessarily belong in a larger AkaneDev Labs project.
+        </p>
+        <a href="https://github.com/AkaneDev-Labs/jslabs"
+           class="inline-block text-indigo-400 font-medium hover:underline">
+          View Source →
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <main id="captchas" class="max-w-7xl mx-auto w-full px-6 pb-32">
+    <h3 class="text-2xl font-semibold mb-8 border-b border-slate-700 pb-2">
+      CAPTCHA Platform
+    </h3>
+
+    <div class="bg-slate-800 p-8 rounded-2xl shadow">
+      <h4 class="text-2xl font-semibold mb-3">AkaneDev CAPTCHA</h4>
+      <p class="text-slate-400 max-w-3xl mb-6">
+        Websites can load the JS Labs CAPTCHA client directly from our service.
+        Each CAPTCHA is built from its own HTML, CSS, and JavaScript, allowing
+        different challenges to be developed and deployed independently.
+      </p>
+
+      <div class="bg-slate-950 rounded-xl p-4 overflow-x-auto mb-6">
+        <code class="text-slate-300 text-sm">
+          &lt;script src="https://jslabs.akanedev.au/captcha/client.js"&gt;&lt;/script&gt;
+        </code>
+      </div>
+
+      <a href="/captcha/client.js"
+         class="inline-block text-indigo-400 font-medium hover:underline">
+        View CAPTCHA Client →
+      </a>
+    </div>
+  </main>
+
+  <footer class="fixed bottom-0 left-0 right-0 bg-slate-900/80 backdrop-blur z-50 shadow border-t border-slate-800 py-4 text-center text-sm text-slate-400">
+    <p>
+      &copy; {{ site.time | date: "%Y" }} AkaneDev Labs. All rights reserved.
+    </p>
+    <p class="mt-1">
+      Built with ♥ by AkaneDev
+    </p>
+  </footer>
+
+</body>
+</html>
