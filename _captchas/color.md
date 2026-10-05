@@ -2,7 +2,7 @@
 captcha_id: color
 name: Color CAPTCHA
 version: 1
-html: /captchas/color/index.html
+html: /captchas/color/
 css: /captchas/color/style.css
 js: /captchas/color/script.js
 ---
