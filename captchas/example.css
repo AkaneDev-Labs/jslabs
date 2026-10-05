@@ -1,0 +1,12 @@
+.captcha-example {
+    box-sizing: border-box;
+    min-height: 140px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-family: system-ui, sans-serif;
+}
+
+.captcha-example h2 { margin: 0 0 .5rem; }
+.captcha-example p { margin: 0 0 1rem; }
+.captcha-example button { padding: .6rem 1rem; cursor: pointer; }
