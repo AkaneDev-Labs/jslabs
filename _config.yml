@@ -1,0 +1,13 @@
+title: AkaneDev CAPTCHA
+description: Client-side CAPTCHA service
+
+collections:
+  captchas:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "captchas"
+    values:
+      layout: null
