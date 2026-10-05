@@ -7,7 +7,7 @@ permalink: /captcha/client.js
     "use strict";
 
     const registry = {
-{% for captcha in site.captchas %}
+{% for captcha in site.collections.captchas.docs %}
         {{ captcha.id | jsonify }}: {
             id: {{ captcha.id | jsonify }},
             name: {{ captcha.name | jsonify }},
