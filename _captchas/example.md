@@ -2,8 +2,9 @@
 id: example
 name: Example CAPTCHA
 version: 1
-script: /captcha/example.js
-enabled: true
+html: /captchas/example/index.html
+css: /captchas/example/style.css
+js: /captchas/example/script.js
 ---
 
-Example CAPTCHA for development.
+A minimal example CAPTCHA.
